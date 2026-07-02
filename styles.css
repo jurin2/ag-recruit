@@ -69,7 +69,7 @@
     border-radius:50%;
     background:radial-gradient(circle, rgba(192,138,40,0.18) 0%, transparent 70%);
   }
-  .hero-inner{position:relative;z-index:2;max-width:680px;}
+  .hero-inner{position:relative;z-index:2;max-width:1080px;}
   .eyebrow{
     display:inline-flex;align-items:center;gap:10px;
     font-size:13px;font-weight:700;color:var(--gold-bright);
