@@ -1,40 +1,32 @@
-(function(){
-  var toggle = document.getElementById('navToggle');
-  var links = document.getElementById('navLinks');
-  toggle.addEventListener('click', function(){
-    links.classList.toggle('open');
-  });
-  links.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click', function(){
-      links.classList.remove('open');
-    });
-  });
+function handleSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  const btn = form.querySelector('.af-submit');
+  btn.textContent = '제출 중...';
+  btn.disabled = true;
 
-  // header shadow on scroll
-  var header = document.querySelector('header');
-  window.addEventListener('scroll', function(){
-    if(window.scrollY > 10){
-      header.style.boxShadow = '0 8px 24px rgba(0,0,0,0.25)';
-    } else {
-      header.style.boxShadow = 'none';
-    }
-  });
-
-  // scroll reveal for cards
-  var revealTargets = document.querySelectorAll('.stat-card, .benefit-card, .job-card, .loc-card, .loc-map-box');
-  revealTargets.forEach(function(el){
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(16px)';
-    el.style.transition = 'opacity .6s ease, transform .6s ease';
-  });
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){
-      if(entry.isIntersecting){
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-        io.unobserve(entry.target);
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  })
+    .then(r => {
+      if (r.ok) {
+        form.innerHTML = `
+          <div style="text-align:center;padding:40px 0">
+            <div style="font-size:48px;margin-bottom:16px">✅</div>
+            <div style="font-size:20px;font-weight:900;color:#111;margin-bottom:8px">지원서가 접수되었습니다!</div>
+            <div style="font-size:14px;color:#999;line-height:1.7">
+              영업일 기준 1~2일 내 담당자가 연락드립니다.<br>문의: 1600-3481
+            </div>
+          </div>`;
+      } else {
+        btn.textContent = '제출 실패 — 다시 시도해주세요';
+        btn.disabled = false;
       }
+    })
+    .catch(() => {
+      btn.textContent = '제출 실패 — 다시 시도해주세요';
+      btn.disabled = false;
     });
-  }, {threshold:0.15});
-  revealTargets.forEach(function(el){ io.observe(el); });
-})();
+}
