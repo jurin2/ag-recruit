@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (submitBtn) {
           submitBtn.disabled = false;
-          submitBtn.textContent = "지원서 접수하기";
+          submitBtn.textContent = "지원서 제출하기";
         }
       });
     });
