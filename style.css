@@ -71,6 +71,7 @@ section{padding:96px 0;}.si{max-width:1160px;margin:0 auto;padding:0 40px;}
 .af-input,.af-select,.af-textarea{border:1.5px solid #E0E0E0;border-radius:9px;padding:13px 16px;font-size:14px;font-family:inherit;color:#111;background:#fff;outline:none;transition:border-color .2s;}
 .af-select{cursor:pointer;appearance:none;}
 .af-textarea{resize:vertical;min-height:80px;}
+.af-help{margin:7px 0 0;font-size:12px;color:#999;line-height:1.4}
 .af-input:focus,.af-select:focus,.af-textarea:focus{border-color:#FF6B2B;}
 .af-agree{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:#888;line-height:1.5;margin-top:4px;}
 .af-agree input{margin-top:2px;accent-color:#FF6B2B;flex-shrink:0;}
