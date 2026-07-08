@@ -252,10 +252,11 @@
               <label class="af-label" for="name">성함 *</label>
               <input class="af-input" id="name" name="성함" type="text" placeholder="홍길동" required="required">
             </div>
-            <div class="af-field">
-              <label class="af-label" for="phone">연락처 *</label>
-              <input class="af-input" id="phone" name="연락처" type="tel" placeholder="010-0000-0000" required="required">
-            </div>
+              <div class="af-field">
+                <label class="af-label" for="phone">연락처 *</label>
+                <input class="af-input" id="phone" name="연락처" type="tel" inputmode="numeric" placeholder="01012345678" required="required">
+                <p class="af-help">하이픈(-) 없이 숫자만 입력해주세요.</p>
+              </div>
             <div class="af-field">
               <label class="af-label" for="career">경력 사항</label>
               <select class="af-select" id="career" name="경력 사항">
