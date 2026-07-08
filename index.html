@@ -6,16 +6,16 @@
   <title>오토지니 채용공고</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <!-- NAV -->
 <nav class="nav">
   <div class="nav-inner">
     <a href="#" class="nav-logo">
       <div class="nav-logo-mark">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 11L4 7H12L14 11H2Z" fill="white"/><circle cx="5" cy="12.5" r="1.5" fill="white"/><circle cx="11" cy="12.5" r="1.5" fill="white"/></svg>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 11L4 7H12L14 11H2Z" fill="white"></path><circle cx="5" cy="12.5" r="1.5" fill="white"></circle><circle cx="11" cy="12.5" r="1.5" fill="white"></circle></svg>
       </div>
       <span class="nav-logo-text">오토지니</span>
     </a>
@@ -23,7 +23,6 @@
       <a href="#about">회사소개</a>
       <a href="#job">채용공고</a>
       <a href="#benefits">복리후생</a>
-      <a href="#location">오시는길</a>
       <a href="#apply" class="nav-cta">지원하기</a>
     </div>
   </div>
@@ -41,9 +40,9 @@
 </div>
 
 <!-- ABOUT -->
-<section id="about" style="background:#fff; padding:96px 0;">
+<section id="about" style="background:#fff;padding:96px 0;">
   <div style="max-width:1160px;margin:0 auto;padding:0 40px;">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;margin-bottom:64px;">
+    <div class="about-top">
       <div>
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:24px;">
           <span style="color:#FF6B2B;font-size:11px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;">ABOUT US</span>
@@ -75,106 +74,100 @@
         </div>
       </div>
       <div style="display:flex;align-items:flex-end;justify-content:center;">
-        <img src="uploads/salesperson5_v2_clean.png" alt="오토지니 영업사원" style="width:100%;height:auto;display:block;">
+        <img src="./uploads/salesperson5_v2_clean.png" alt="오토지니 영업사원" style="width:100%;height:auto;display:block;position:relative;top:20px;">
       </div>
     </div>
-
-    <!-- 차트 -->
-    <div style="border-radius:20px;padding:48px 48px 40px;text-align:center;">
-      <div style="text-align:center;margin-bottom:52px;padding:24px 0;">
-        <p style="font-size:clamp(17px,1.6vw,22px);color:#222;line-height:1.9;word-break:keep-all;font-weight:500;">
-          차량 영업은 회사지원이 중요합니다.<br>
-          저희 회사는 영업사원의 영향력을 위해 아낌없이<br>
-          <strong style="color:#FF6B2B;font-weight:800;">지원과 투자를 하는 회사 입니다.</strong>
-        </p>
-      </div>
-      <div style="display:inline-block;background:#E8F0FF;border-radius:40px;padding:14px 36px;margin-bottom:16px;position:relative;">
-        <span style="font-size:clamp(16px,1.8vw,24px);font-weight:900;color:#111;letter-spacing:-0.02em;">
-          연 평균 매출 성장 속도는 <span style="color:#FF6B2B;">로켓!</span>
-        </span>
-        <div style="position:absolute;bottom:-12px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:9px solid transparent;border-right:9px solid transparent;border-top:12px solid #E8F0FF;"></div>
-      </div>
-      <div style="position:relative;margin-top:28px;padding:0 16px;">
-        <div style="display:flex;align-items:flex-end;justify-content:center;gap:20px;height:240px;">
-          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex:1;max-width:90px;">
-            <span style="font-size:12px;font-weight:700;color:#444;">104%</span>
-            <div style="width:100%;background:#2D2D2D;border-radius:4px 4px 0 0;height:52px;"></div>
-            <span style="font-size:12px;color:#666;">2020</span>
-          </div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex:1;max-width:90px;">
-            <span style="font-size:12px;font-weight:700;color:#444;">186%</span>
-            <div style="width:100%;background:#2D2D2D;border-radius:4px 4px 0 0;height:92px;"></div>
-            <span style="font-size:12px;color:#666;">2021</span>
-          </div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex:1;max-width:90px;">
-            <span style="font-size:12px;font-weight:700;color:#444;">258%</span>
-            <div style="width:100%;background:#2D2D2D;border-radius:4px 4px 0 0;height:128px;"></div>
-            <span style="font-size:12px;color:#666;">2022</span>
-          </div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex:1;max-width:90px;">
-            <span style="font-size:12px;font-weight:700;color:#444;">320%</span>
-            <div style="width:100%;background:#2D2D2D;border-radius:4px 4px 0 0;height:158px;"></div>
-            <span style="font-size:12px;color:#666;">2023</span>
-          </div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex:1;max-width:90px;">
-            <span style="font-size:12px;font-weight:700;color:#444;">400%</span>
-            <div style="width:100%;background:#2D2D2D;border-radius:4px 4px 0 0;height:197px;"></div>
-            <span style="font-size:12px;color:#666;">2024</span>
-          </div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex:1;max-width:90px;">
-            <span style="font-size:12px;font-weight:700;color:#FF6B2B;">480%</span>
-            <div style="width:100%;background:#FF6B2B;border-radius:4px 4px 0 0;height:236px;"></div>
-            <span style="font-size:12px;color:#666;font-weight:700;">2025</span>
+    <div class="chart-wrap">
+      <p style="font-size:clamp(16px,1.5vw,25px);color:#222;line-height:1.8;word-break:keep-all;font-weight:500;">차량 영업은 회사지원이 중요합니다.<br>저희 회사는 영업사원의 영향력을 위해 아낌없이<br><strong style="color:#FF6B2B;font-weight:800;">지원과 투자를 하는 회사 입니다.</strong></p>
+      <div style="position:relative;width:100%;max-width:700px;margin:48px auto 0;">
+        <div style="position:absolute;top:-10px;left:50%;transform:translateX(-50%);z-index:3;text-align:center;">
+          <div class="chart-bubble" style="display:inline-block;background:#E8F0FF;border-radius:40px;padding:11px 28px;position:relative;white-space:nowrap;">
+            <span class="chart-bubble-text" style="font-size:clamp(14px,1.5vw,20px);font-weight:900;color:#111;letter-spacing:-0.02em;">연 평균 매출 성장 속도는 <span style="color:#FF6B2B;">로켓!</span></span>
+            <div style="position:absolute;bottom:-10px;left:55%;transform:translateX(-50%);width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-top:10px solid #E8F0FF;"></div>
           </div>
         </div>
-        <svg style="position:absolute;top:0;left:0;width:100%;height:240px;pointer-events:none;" viewBox="0 0 700 240" preserveAspectRatio="none">
-          <defs>
-            <marker id="arr2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-              <polygon points="0 0, 10 3.5, 0 7" fill="#D32F2F"/>
-            </marker>
-          </defs>
-          <path d="M 40 215 Q 200 185 350 145 Q 500 100 660 10" stroke="#D32F2F" stroke-width="4" fill="none" marker-end="url(#arr2)" stroke-linecap="round"/>
-        </svg>
+        <div style="padding-top:70px;position:relative;">
+          <div style="display:flex;align-items:flex-end;justify-content:center;gap:clamp(6px,2vw,20px);height:260px;position:relative;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;">
+              <span style="font-size:clamp(10px,1vw,13px);font-weight:700;color:#444;">104%</span>
+              <div style="width:100%;background:#2D2D2D;border-radius:4px 4px 0 0;height:80px;"></div>
+              <span style="font-size:clamp(10px,1vw,13px);color:#666;">2020</span>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;">
+              <span style="font-size:clamp(10px,1vw,13px);font-weight:700;color:#444;">186%</span>
+              <div style="width:100%;background:#2D2D2D;border-radius:4px 4px 0 0;height:120px;"></div>
+              <span style="font-size:clamp(10px,1vw,13px);color:#666;">2021</span>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;">
+              <span style="font-size:clamp(10px,1vw,13px);font-weight:700;color:#444;">258%</span>
+              <div style="width:100%;background:#2D2D2D;border-radius:4px 4px 0 0;height:155px;"></div>
+              <span style="font-size:clamp(10px,1vw,13px);color:#666;">2022</span>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;">
+              <span style="font-size:clamp(10px,1vw,13px);font-weight:700;color:#444;">320%</span>
+              <div style="width:100%;background:#2D2D2D;border-radius:4px 4px 0 0;height:185px;"></div>
+              <span style="font-size:clamp(10px,1vw,13px);color:#666;">2023</span>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;">
+              <span style="font-size:clamp(10px,1vw,13px);font-weight:700;color:#444;">400%</span>
+              <div style="width:100%;background:#2D2D2D;border-radius:4px 4px 0 0;height:218px;"></div>
+              <span style="font-size:clamp(10px,1vw,13px);color:#666;">2024</span>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;">
+              <span style="font-size:clamp(10px,1vw,13px);font-weight:700;color:#FF6B2B;">480%</span>
+              <div style="width:100%;background:#FF6B2B;border-radius:4px 4px 0 0;height:260px;"></div>
+              <span style="font-size:clamp(10px,1vw,13px);color:#666;font-weight:700;">2025</span>
+            </div>
+            <svg class="chart-svg" style="position:absolute;top:0;left:0;width:100%;height:260px;pointer-events:none;overflow:visible;" viewBox="0 0 700 260" preserveAspectRatio="none">
+              <defs>
+                <marker id="arr3" markerWidth="12" markerHeight="9" refX="11" refY="4.5" orient="auto">
+                  <polygon points="0 0, 12 4.5, 0 9" fill="#D32F2F"></polygon>
+                </marker>
+              </defs>
+              <path d="M 49 197 L 651 68" stroke="#D32F2F" stroke-width="3.5" fill="none" marker-end="url(#arr3)" stroke-linecap="round"></path>
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- OUR IDEAL CANDIDATE -->
-<section style="padding:96px 0;background:#FFFFFF;">
+<!-- IDEAL CANDIDATE -->
+<section style="padding:96px 0;background-color:#FFFFFF;overflow:hidden;">
   <div class="si">
     <div style="margin-bottom:56px;max-width:900px;margin-left:auto;margin-right:auto;text-align:center;">
       <div class="sec-label">OUR IDEAL CANDIDATE</div>
       <h2 class="sec-title">오토지니는 함께 성장할<br>영업 파트너를 기다리고 있습니다</h2>
-      <p class="sec-desc" style="margin-top:16px;max-width:none;text-align:center;">자동차를 이해하고, 고객과 소통하며, 함께 성장할 준비가 되어 있다면 충분합니다.</p>
+      <p class="sec-desc" style="margin-top:16px;max-width:none;">자동차를 이해하고, 고객과 소통하며, 함께 성장할 준비가 되어 있다면 충분합니다.</p>
     </div>
-    <div style="display:flex;flex-direction:column;gap:24px;max-width:900px;margin:0 auto;width:100%;">
-      <div style="display:grid;grid-template-columns:380px 1fr;gap:40px;align-items:center;">
-        <img src="uploads/office1.png" alt="" style="width:380px;height:260px;object-fit:cover;border-radius:16px;display:block;">
-        <div>
-          <span style="font-size:26px;font-weight:800;color:#111;letter-spacing:-0.02em;margin-bottom:12px;display:block;">성장 의지가 있는 분</span>
-          <p style="font-size:16px;color:#555;line-height:1.8;">경력보다 태도를 봅니다.<br>배우려는 의지 하나면 충분합니다.</p>
+    <div class="ideal-wrap" style="max-width:750px;margin:0 auto;width:100%;">
+      <div class="ideal-row">
+        <img class="ideal-img" src="./uploads/office1.png" alt="">
+        <div class="ideal-text">
+          <span class="ideal-title">성장 의지가 있는 분</span>
+          <p class="ideal-desc">경력보다 태도를 봅니다.<br>배우려는 의지 하나면 충분합니다.</p>
         </div>
       </div>
-      <div style="display:grid;grid-template-columns:380px 1fr;gap:40px;align-items:center;">
-        <img src="uploads/02_responsibility_handshake.png" alt="" style="width:380px;height:260px;object-fit:cover;border-radius:16px;display:block;filter:brightness(1.15) contrast(1.1) saturate(1.1);">
-        <div>
-          <span style="font-size:26px;font-weight:800;color:#111;letter-spacing:-0.02em;margin-bottom:12px;display:block;">약속과 책임을 중시하는 분</span>
-          <p style="font-size:16px;color:#555;line-height:1.8;">맡은 역할을 끝까지 책임지고<br>신뢰를 쌓아가는 분.</p>
+      <div class="ideal-row">
+        <img class="ideal-img" src="./uploads/office2-98a71eec.png" alt="">
+        <div class="ideal-text">
+          <span class="ideal-title">약속과 책임을 중시하는 분</span>
+          <p class="ideal-desc">맡은 역할을 끝까지 책임지고<br>신뢰를 쌓아가는 분.</p>
         </div>
       </div>
-      <div style="display:grid;grid-template-columns:380px 1fr;gap:40px;align-items:center;">
-        <img src="uploads/03_challenge_curiosity.png" alt="" style="width:380px;height:260px;object-fit:cover;border-radius:16px;display:block;filter:brightness(1.15);">
-        <div>
-          <span style="font-size:26px;font-weight:800;color:#111;letter-spacing:-0.02em;margin-bottom:12px;display:block;">도전과 호기심이 많은 분</span>
-          <p style="font-size:16px;color:#555;line-height:1.8;">새로운 시도를 두려워하지 않고<br>항상 배우려는 자세를 가진 분.</p>
+      <div class="ideal-row">
+        <img class="ideal-img" src="./uploads/office3-a4f28d80.png" alt="">
+        <div class="ideal-text">
+          <span class="ideal-title">도전과 호기심이 많은 분</span>
+          <p class="ideal-desc">새로운 시도를 두려워하지 않고<br>항상 배우려는 자세를 가진 분.</p>
         </div>
       </div>
-      <div style="display:grid;grid-template-columns:380px 1fr;gap:40px;align-items:center;">
-        <img src="uploads/office4.png" alt="" style="width:380px;height:260px;object-fit:cover;border-radius:16px;display:block;">
-        <div>
-          <span style="font-size:26px;font-weight:800;color:#111;letter-spacing:-0.02em;margin-bottom:12px;display:block;">협업과 소통이 뛰어난 분</span>
-          <p style="font-size:16px;color:#555;line-height:1.8;">팀과 함께 시너지를 만들고<br>원활하게 소통하는 분.</p>
+      <div class="ideal-row">
+        <img class="ideal-img" src="./uploads/office4.png" alt="">
+        <div class="ideal-text">
+          <span class="ideal-title">협업과 소통이 뛰어난 분</span>
+          <p class="ideal-desc">팀과 함께 시너지를 만들고<br>원활하게 소통하는 분.</p>
         </div>
       </div>
     </div>
@@ -224,7 +217,7 @@
             <tr><td>근무시간</td><td>주 5일 (월~금) 10:00 ~ 17:30</td></tr>
             <tr><td>경력</td><td>경력 무관 (신입 가능)</td></tr>
             <tr><td>학력</td><td>학력 무관</td></tr>
-            <tr><td>모집인원</td><td>20명</td></tr>
+            <tr><td>모집인원</td><td>상시채용</td></tr>
           </table>
         </div>
         <div class="job-sec">
@@ -254,18 +247,18 @@
           <div class="s-badge"><div style="width:5px;height:5px;background:#FF6B2B;border-radius:50%;"></div>상시모집 진행 중</div>
           <div class="s-t">간편 지원하기</div>
           <div class="s-sub">아래 정보를 입력하시면 담당자가 직접 연락드립니다.</div>
-          <form action="https://formspree.io/f/xwvdyjdr" method="POST" onsubmit="handleSubmit(event)" style="display:flex;flex-direction:column;gap:12px;">
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="handleSubmit(event)" style="display:flex;flex-direction:column;gap:12px;">
             <div class="af-field">
               <label class="af-label" for="name">성함 *</label>
-              <input class="af-input" id="name" name="성함" type="text" placeholder="홍길동" required>
+              <input class="af-input" id="name" name="name" type="text" placeholder="홍길동" required="required">
             </div>
             <div class="af-field">
               <label class="af-label" for="phone">연락처 *</label>
-              <input class="af-input" id="phone" name="연락처" type="tel" placeholder="010-0000-0000" required>
+              <input class="af-input" id="phone" name="phone" type="tel" placeholder="010-0000-0000" required="required">
             </div>
             <div class="af-field">
               <label class="af-label" for="career">경력 사항</label>
-              <select class="af-select" id="career" name="경력 사항">
+              <select class="af-select" id="career" name="career">
                 <option value="">선택해주세요</option>
                 <option value="신입">신입 (경력 없음)</option>
                 <option value="1-3년">1~3년</option>
@@ -275,10 +268,10 @@
             </div>
             <div class="af-field">
               <label class="af-label" for="message">하고 싶은 말 (선택)</label>
-              <textarea class="af-textarea" id="message" name="하고 싶은 말" placeholder="간단한 자기소개를 적어주세요." style="min-height:80px;"></textarea>
+              <textarea class="af-textarea" id="message" name="message" placeholder="간단한 자기소개를 적어주세요." style="min-height:80px;"></textarea>
             </div>
             <label class="af-agree">
-               <input type="checkbox" name="개인정보동의" value="동의" required>
+              <input type="checkbox" name="agree" required="required">
               개인정보 수집·이용에 동의합니다.
             </label>
             <button class="af-submit" type="submit">지원서 제출하기</button>
@@ -296,38 +289,38 @@
   <div class="si">
     <div class="sec-label">BENEFITS</div>
     <h2 class="sec-title">복리후생</h2>
-    <div class="ben-box">
+    <div class="ben-box" style="margin-top:48px;">
       <div class="ben-header">
         <div class="ben-header-t">우리 회사의 복지는?</div>
       </div>
       <div class="ben-grid">
         <div class="ben-card">
-          <div class="ben-card-ico"><img src="uploads/icon01.png" alt="기념일"></div>
+          <div class="ben-card-ico"><img src="./uploads/icon01.png" alt="기념일"></div>
           <div class="ben-card-t">기념일 축하</div>
           <div class="ben-card-d">생일날 기념 지원!</div>
         </div>
         <div class="ben-card">
-          <div class="ben-card-ico"><img src="uploads/icon02.png" alt="여행"></div>
+          <div class="ben-card-ico"><img src="./uploads/icon02.png" alt="여행"></div>
           <div class="ben-card-t">여행 지원</div>
           <div class="ben-card-d">매년 우수사원 해외 및 국내<br>여행비 지원</div>
         </div>
         <div class="ben-card">
-          <div class="ben-card-ico"><img src="uploads/icon03.png" alt="휴가"></div>
+          <div class="ben-card-ico"><img src="./uploads/icon03.png" alt="휴가"></div>
           <div class="ben-card-t">휴가 제도</div>
           <div class="ben-card-d">자유로운 연/월차 사용</div>
         </div>
         <div class="ben-card">
-          <div class="ben-card-ico"><img src="uploads/icon04.png" alt="스페셜데이"></div>
+          <div class="ben-card-ico"><img src="./uploads/icon04.png" alt="스페셜데이"></div>
           <div class="ben-card-t">스페셜데이</div>
-          <div class="ben-card-d">한달에 한번 점심시간 회식!</div>
+          <div class="ben-card-d">한달에 한번 점심시간 회식!<br>(불필요한 근무외 시간 회식은<br>지향하지 않음!)</div>
         </div>
         <div class="ben-card">
-          <div class="ben-card-ico"><img src="uploads/icon05.png" alt="자기계발"></div>
+          <div class="ben-card-ico"><img src="./uploads/icon05.png" alt="자기계발"></div>
           <div class="ben-card-t">자기계발 지원</div>
           <div class="ben-card-d">자기계발 위한 도서구입비 지원</div>
         </div>
         <div class="ben-card">
-          <div class="ben-card-ico"><img src="uploads/icon06.png" alt="우수사원"></div>
+          <div class="ben-card-ico"><img src="./uploads/icon06.png" alt="우수사원"></div>
           <div class="ben-card-t">우수사원 대우</div>
           <div class="ben-card-d">우수사원 팀장급 대우<br>(연차 상관 없음)</div>
         </div>
@@ -356,7 +349,6 @@
     </div>
   </div>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>
