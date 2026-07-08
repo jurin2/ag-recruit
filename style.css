@@ -93,16 +93,10 @@ section{padding:96px 0;}.si{max-width:1160px;margin:0 auto;padding:0 40px;}
 .cta-btn{background:#fff;color:#FF6B2B;border:none;padding:17px 48px;border-radius:9px;font-size:16px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:0 8px 32px rgba(0,0,0,0.12);text-decoration:none;display:inline-block;}
 .cta-c{margin-top:24px;font-size:14px;color:rgba(255,255,255,0.7);}
 .cta-c strong{color:#fff;font-weight:800;}
-.ag-footer{background:#102d46;padding:72px 40px;color:#fff}
-.ag-footer__inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1fr 1.35fr 1.45fr;gap:64px;align-items:flex-start}
-.ag-footer__logo{line-height:.95;color:#fff}
-.ag-footer__logo span{display:block;font-size:26px;font-weight:900;letter-spacing:.3px}
-.ag-footer__logo strong{display:block;margin-top:2px;font-size:46px;font-weight:900;font-style:italic;letter-spacing:-1.5px}
-.ag-footer__desc{font-size:17px;font-weight:700;line-height:1.9;color:#fff;word-break:keep-all}
-.ag-footer__info{display:flex;flex-direction:column;gap:13px}
-.ag-footer__row{display:grid;grid-template-columns:105px 1fr;gap:14px;align-items:start}
-.ag-footer__row span{font-size:15px;font-weight:800;color:#86c8ff;line-height:1.6}
-.ag-footer__row p{margin:0;font-size:15px;font-weight:700;color:#fff;line-height:1.6;word-break:keep-all}
+.footer{background:#333;padding:36px 0;}
+.foot-in{max-width:1160px;margin:0 auto;padding:0 40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.foot-logo{font-size:15px;font-weight:700;color:rgba(255,255,255,0.6);}
+.foot-info{font-size:11px;color:rgba(255,255,255,0.4);line-height:1.9;}
 @media(max-width:768px){.ag-footer{padding:48px 24px}.ag-footer__inner{display:flex;flex-direction:column;gap:28px}.ag-footer__logo span{font-size:24px}.ag-footer__logo strong{font-size:40px}.ag-footer__desc{font-size:15px}.ag-footer__row{grid-template-columns:86px 1fr;gap:10px}.ag-footer__row span,.ag-footer__row p{font-size:14px}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
 @container(max-width:600px){
