@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
         '<div style="text-align:center;padding:40px 0">' +
           '<div style="font-size:48px;margin-bottom:16px">✅</div>' +
           '<div style="font-size:20px;font-weight:900;color:#111;margin-bottom:8px">지원서가 접수되었습니다!</div>' +
-          '<div style="font-size:14px;color:#999;line-height:1.7">영업일 기준 1~2일 내 담당자가 연락드립니다.<br>문의: 1600-3481</div>' +
+          '<div style="font-size:14px;color:#999;line-height:1.7">제출해주신 내용 검토 후, 서류 합격자에 한해 개별 연락드리겠습니다.</div>' +
         '</div>';
     });
   }
