@@ -154,7 +154,7 @@ section{padding:96px 0;}
 .foot-in{max-width:1160px;margin:0 auto;padding:0 40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;}
 .foot-logo{margin-bottom:0;}
 .foot-logo img{display:block;width:120px;height:auto;}
-.foot-info{line-height:1.9;color:#9b9b9b;font-size:15px;font-weight:600;text-align:left;}
+.foot-info{line-height:1.6;color:#9b9b9b;font-size:15px;font-weight:400;text-align:left;}
 .foot-line{display:block;color:#9b9b9b;margin:2px 0;}
 
 /* =========================================================
