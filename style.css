@@ -8,6 +8,7 @@ a{color:inherit;}a:hover{color:#FF6B2B;}
 .nav-logo-text{font-size:17px;font-weight:800;color:#111;letter-spacing:-0.5px;}
 .nav-links{display:flex;align-items:center;gap:28px;}
 .nav-links a{font-size:13px;font-weight:500;color:#666;text-decoration:none;transition:color .2s;}
+.nav-links > a:nth-child(5){color:#ffffff;}
 .nav-links a:hover{color:#FF6B2B;}
 .nav-cta{background:#111;color:#fff;padding:8px 20px;border-radius:6px;font-size:13px;font-weight:700;text-decoration:none;transition:background .2s;}
 .nav-cta:hover{background:#FF6B2B;color:#fff!important;}
