@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
   /* =========================================================
      이력서 / 지원서 접수 폼 전송
   ========================================================= */
-  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxSqGoXj2HNHvKI9Z5iTECeZi6Qil9QyfGadvF5w6ABb_v2yVaz66UeMo27cgZF_NuP/exec";
+  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyiMES_mdI1rGSWIZJcI24h69HP1dlRxuEx5UM6BjOxSke9nKi0UW_j7hQqpwy7uZrH/exec";
 
   const form = document.getElementById("applyForm");
 
