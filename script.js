@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // 입력폼 데이터 전송
 (function () {
-  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbKOewYN5IZFMK2Ge41HT9NRN5OOak35RMBF99937qiuXMwylspMD9TCd3Qk7VZzUmz/exec";
+  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyKOewYN5TZFMK2Ge41HT9NRN5O00k35RMBE99937qiuXMwylspMD9TCd3Qk7ZvZumz/exec";
 
   document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("applyForm");
