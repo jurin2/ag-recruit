@@ -111,7 +111,7 @@ section{padding:96px 0;}
 .s-btn-out:hover{border-color:#FF6B2B;color:#FF6B2B;}
 .af-field{display:flex;flex-direction:column;gap:7px;}
 .af-label{font-size:12px;font-weight:700;color:#555;}
-.af-input,.af-select,.af-textarea{border:1.5px solid #E0E0E0;border-radius:9px;padding:13px 16px;font-size:16px;font-family:inherit;color:#111;background:#fff;outline:none;transition:border-color .2s;}
+.af-input,.af-select,.af-textarea{border:1.5px solid #E0E0E0;border-radius:9px;padding:13px 16px;font-size:14px;font-family:inherit;color:#111;background:#fff;outline:none;transition:border-color .2s;}
 .af-select{cursor:pointer;appearance:none;}
 .af-textarea{resize:vertical;min-height:80px;}
 .af-input:focus,.af-select:focus,.af-textarea:focus{border-color:#FF6B2B;}
