@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
  // 입력폼 데이터 전송
 (function () {
-  const GOOGLE_SCRIPT_URL = "여기에_구글_웹앱_URL_넣기";
+  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyKOewYN5TZFMK2Ge41HT9NRN5O00k35RMBE99937qiuXMwylspMD9TCd3Qk7ZvZumz/exec";
 
   const form = document.getElementById("applyForm");
 
