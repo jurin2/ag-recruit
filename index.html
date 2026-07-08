@@ -247,7 +247,7 @@
           <div class="s-badge"><div style="width:5px;height:5px;background:#FF6B2B;border-radius:50%;"></div>상시모집 진행 중</div>
           <div class="s-t">간편 지원하기</div>
           <div class="s-sub">아래 정보를 입력하시면 담당자가 직접 연락드립니다.</div>
-          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="handleSubmit(event)" style="display:flex;flex-direction:column;gap:12px;">
+          <form id="applyForm" onsubmit="handleSubmit(event)" style="display:flex;flex-direction:column;gap:12px;">
             <div class="af-field">
               <label class="af-label" for="name">성함 *</label>
               <input class="af-input" id="name" name="성함" type="text" placeholder="홍길동" required="required">
