@@ -113,6 +113,7 @@ section{padding:96px 0;width:100%;max-width:100%;overflow-x:hidden;}
 ========================================================= */
 .ins-chips{display:flex;flex-wrap:wrap;gap:10px;width:100%;max-width:100%;min-width:0;}
 .ins-chip{background:#FFF0E8;color:#FF6B2B;border:1px solid #FFD5BE;padding:11px 22px;border-radius:8px;font-size:17px;font-weight:700;max-width:100%;overflow-wrap:break-word;}
+
 .proc{display:flex;align-items:center;flex-wrap:wrap;gap:10px;width:100%;max-width:100%;min-width:0;}
 .proc-s{background:#fff;border-radius:8px;padding:15px 24px;font-size:17px;font-weight:700;color:#333;max-width:100%;overflow-wrap:break-word;text-align:center;}
 .proc-s.fin{background:linear-gradient(135deg,#FF6B2B,#FFAA1C);color:#fff;}
@@ -387,43 +388,45 @@ section{padding:96px 0;width:100%;max-width:100%;overflow-x:hidden;}
     line-height:1.4;
   }
 
-  /* 전형 절차 모바일: 화살표 유지 + 가운데 정렬 */
+  /* 전형 절차 모바일: 데스크탑처럼 가로형 유지 */
   .proc{
     width:100%;
     max-width:100%;
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     align-items:center;
-    justify-content:center;
+    justify-content:flex-start;
+    flex-wrap:wrap;
     gap:8px;
     overflow:visible;
   }
 
   .proc-s{
     width:auto;
-    min-width:180px;
-    max-width:86%;
-    padding:12px 22px;
+    min-width:0;
+    max-width:none;
+    flex:0 0 auto;
+    padding:11px 15px;
     font-size:14px;
     line-height:1.4;
     text-align:center;
+    white-space:nowrap;
   }
 
   .proc-arr{
-    display:block;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
     width:auto;
     height:auto;
-    font-size:0;
+    font-size:16px;
     line-height:1;
-    color:#FF6B2B;
+    color:#CCC;
+    flex:0 0 auto;
   }
 
   .proc-arr::before{
-    content:"↓";
-    display:block;
-    font-size:18px;
-    font-weight:800;
-    line-height:1;
+    content:none;
   }
 
   .ben-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
@@ -512,17 +515,15 @@ section{padding:96px 0;width:100%;max-width:100%;overflow-x:hidden;}
   }
 
   .proc{
-    gap:7px;
+    gap:6px;
   }
 
   .proc-s{
-    min-width:170px;
-    max-width:88%;
-    padding:11px 18px;
+    padding:9px 11px;
     font-size:13px;
   }
 
-  .proc-arr::before{
-    font-size:17px;
+  .proc-arr{
+    font-size:14px;
   }
 }
