@@ -1,6 +1,8 @@
 /* 오토지니 채용공고 - script.js */
 document.addEventListener('DOMContentLoaded', function() {
 
+  console.log("[오토지니 지원폼] script.js 로드됨");
+
   /* =========================================================
      이력서 / 지원서 접수 폼 전송
   ========================================================= */
@@ -8,9 +10,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const form = document.getElementById("applyForm");
 
+  console.log("[오토지니 지원폼] form:", form);
+
   if (form) {
     form.addEventListener("submit", function(e) {
       e.preventDefault();
+
+      console.log("[오토지니 지원폼] submit 감지됨");
 
       const submitBtn =
         form.querySelector('button[type="submit"]') ||
@@ -25,21 +31,20 @@ document.addEventListener('DOMContentLoaded', function() {
       formData.append("접수페이지", location.href);
       formData.append("접수시간", new Date().toLocaleString("ko-KR"));
 
-      const bodyData = new URLSearchParams();
-
       for (const pair of formData.entries()) {
-        bodyData.append(pair[0], pair[1]);
+        console.log("[오토지니 지원폼] 전송값:", pair[0], pair[1]);
       }
+
+      console.log("[오토지니 지원폼] fetch 시작:", GOOGLE_SCRIPT_URL);
 
       fetch(GOOGLE_SCRIPT_URL, {
         method: "POST",
         mode: "no-cors",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
-        },
-        body: bodyData.toString()
+        body: formData
       })
       .then(function() {
+        console.log("[오토지니 지원폼] fetch 완료");
+
         form.innerHTML =
           '<div style="text-align:center;padding:40px 0">' +
             '<div style="font-size:48px;margin-bottom:16px">✅</div>' +
@@ -47,17 +52,19 @@ document.addEventListener('DOMContentLoaded', function() {
             '<div style="font-size:14px;color:#999;line-height:1.7">영업일 기준 1~2일 내 담당자가 연락드립니다.<br>문의: 1600-3481</div>' +
           '</div>';
       })
-      .catch(function() {
+      .catch(function(error) {
+        console.error("[오토지니 지원폼] fetch 오류:", error);
+
         alert("접수 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.");
 
         if (submitBtn) {
           submitBtn.disabled = false;
-          submitBtn.textContent = "지원서 제출하기";
+          submitBtn.textContent = "지원서 접수하기";
         }
       });
     });
   } else {
-    console.warn("applyForm 폼을 찾을 수 없습니다.");
+    console.warn("[오토지니 지원폼] applyForm 폼을 찾을 수 없습니다.");
   }
 
 
