@@ -38,3 +38,47 @@ document.addEventListener('DOMContentLoaded', function() {
   els.forEach(function(el) { io.observe(el); });
 
 });
+
+ // 입력폼 데이터 전송
+(function () {
+  const GOOGLE_SCRIPT_URL = "여기에_구글_웹앱_URL_넣기";
+
+  const form = document.getElementById("applyForm");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.textContent = "접수 중...";
+
+    const formData = new FormData(form);
+    formData.append("pageUrl", location.href);
+
+    const bodyData = new URLSearchParams();
+
+    for (const pair of formData.entries()) {
+      bodyData.append(pair[0], pair[1]);
+    }
+
+    fetch(GOOGLE_SCRIPT_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      body: bodyData.toString()
+    })
+    .then(function () {
+      alert("문의가 정상적으로 접수되었습니다.");
+      form.reset();
+    })
+    .catch(function () {
+      alert("접수 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.");
+    })
+    .finally(function () {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "문의 접수하기";
+    });
+  });
+})();
