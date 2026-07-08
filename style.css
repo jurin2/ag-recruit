@@ -177,30 +177,35 @@ section{padding:96px 0;}
   MEDIA QUERY - TABLET / MOBILE
 ========================================================= */
 @media(max-width:768px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden;}
+  img,video,iframe{max-width:100%;height:auto;}
   .nav-inner{padding:0 20px;}
   .nav-links a:not(.nav-cta){display:none;}
   section{padding:56px 0;}
-  .si{padding:0 20px;}
+  .si{padding:0 20px;max-width:100%;}
   .sec-title{font-size:26px;letter-spacing:-0.6px;}
   .sec-desc{font-size:15px;max-width:none;}
   .hero{min-height:420px;}
-  .hero-inner{padding:72px 20px 44px;}
+  .hero-inner{padding:72px 20px 44px;max-width:100%;}
   .hero-sub{font-size:13px;}
   .hero-title{font-size:30px;letter-spacing:-0.8px;}
   .hero-quote{font-size:14px;}
   .about-top{grid-template-columns:1fr;gap:32px;}
-  .chart-wrap{padding:24px 8px 20px;}
+  .chart-wrap{padding:24px 8px 20px;max-width:100%;overflow:hidden;}
   .chart-bars{gap:6px;height:160px;}
-  .chart-svg{transform:translateY(10px);}
+  .chart-svg{transform:translateY(10px);max-width:100%;}
   .chart-bubble{padding:18px 32px!important;}
-  .ideal-wrap{gap:24px;}
+  .ideal-wrap{gap:24px;max-width:100%;}
   .why-grid{grid-template-columns:1fr;}
   .why-card{padding:28px 22px;}
   .why-n{font-size:48px;}
   .why-t{font-size:18px;}
   .why-d{font-size:15px;}
-  .job-layout{grid-template-columns:1fr;}
-  .sidebar{position:static;}
+  .job-layout{grid-template-columns:1fr;width:100%;max-width:100%;min-width:0;}
+  .sidebar{position:static;width:100%;max-width:100%;min-width:0;}
+  .s-card{width:100%;max-width:100%;min-width:0;box-sizing:border-box;}
+  .af-field,form{width:100%;max-width:100%;min-width:0;}
+  .af-input,.af-select,.af-textarea,.af-submit,.s-btn-out{width:100%;max-width:100%;box-sizing:border-box;}
   .jt td{padding:14px 0;font-size:15px;}
   .jt td:first-child{width:100px;}
   .jl li{font-size:15px;}
@@ -223,7 +228,7 @@ section{padding:96px 0;}
   .foot-logo{margin-bottom:22px;}
   .foot-logo img{width:112px;}
   .foot-info{line-height:1.5;color:#9b9b9b;font-size:15px;font-weight:600;}
-  .foot-line{display:block;margin-top:4px;color:rgba(255,255,255,0.75);}
+  .foot-line{display:block;margin-top:4px;color:#9b9b9b;}
 }
 
 /* =========================================================
