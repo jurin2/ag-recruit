@@ -1,3 +1,5 @@
+console.log("script.js 연결됨");
+
 /* 오토지니 채용공고 - script.js */
 document.addEventListener('DOMContentLoaded', function() {
 
