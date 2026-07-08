@@ -1,22 +1,20 @@
 /* 오토지니 채용공고 - script.js */
 document.addEventListener('DOMContentLoaded', function() {
 
-  // 입력폼 데이터 전송
-(function () {
+  /* =========================================================
+     이력서 / 지원서 접수 폼 전송
+  ========================================================= */
   const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyKOewYN5TZFMK2Ge41HT9NRN5O00k35RMBE99937qiuXMwylspMD9TCd3Qk7ZvZumz/exec";
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("applyForm");
+  const form = document.getElementById("applyForm");
 
-    if (!form) {
-      console.warn("applyForm 폼을 찾을 수 없습니다.");
-      return;
-    }
-
-    form.addEventListener("submit", function (e) {
+  if (form) {
+    form.addEventListener("submit", function(e) {
       e.preventDefault();
 
-      const submitBtn = form.querySelector('button[type="submit"]');
+      const submitBtn =
+        form.querySelector('button[type="submit"]') ||
+        form.querySelector('.af-submit');
 
       if (submitBtn) {
         submitBtn.disabled = true;
@@ -24,7 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       const formData = new FormData(form);
-      formData.append("pageUrl", location.href);
+      formData.append("접수페이지", location.href);
+      formData.append("접수시간", new Date().toLocaleString("ko-KR"));
 
       const bodyData = new URLSearchParams();
 
@@ -40,47 +39,63 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         body: bodyData.toString()
       })
-      .then(function () {
-        alert("지원서가 정상적으로 접수되었습니다.");
-        form.reset();
+      .then(function() {
+        form.innerHTML =
+          '<div style="text-align:center;padding:40px 0">' +
+            '<div style="font-size:48px;margin-bottom:16px">✅</div>' +
+            '<div style="font-size:20px;font-weight:900;color:#111;margin-bottom:8px">지원서가 접수되었습니다!</div>' +
+            '<div style="font-size:14px;color:#999;line-height:1.7">영업일 기준 1~2일 내 담당자가 연락드립니다.<br>문의: 1600-3481</div>' +
+          '</div>';
       })
-      .catch(function () {
+      .catch(function() {
         alert("접수 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.");
-      })
-      .finally(function () {
+
         if (submitBtn) {
           submitBtn.disabled = false;
           submitBtn.textContent = "지원서 접수하기";
         }
       });
     });
-  });
-})();
+  } else {
+    console.warn("applyForm 폼을 찾을 수 없습니다.");
+  }
 
 
-  // 스크롤 애니메이션
+  /* =========================================================
+     스크롤 애니메이션
+  ========================================================= */
   var sel = '.sec-label,.sec-title,.sec-desc,.why-card,.ben-card,.job-sec,.sidebar,.hero-sub,.hero-title,.hero-quote,.cta-t,.cta-d,.cta-btn,.cta-c,.ideal-row,.why-n,.why-t,.why-d,.jl li,.ins-chip,.proc-s,.s-card,.foot-logo,.foot-info,.about-top,.chart-wrap,.chart-bubble';
   var els = Array.from(document.querySelectorAll(sel));
+
   if (!els.length) return;
+
   els.forEach(function(el) {
     el.style.opacity = '0';
     el.style.transform = 'translateY(24px)';
     el.style.transition = 'opacity 0.55s ease,transform 0.55s ease';
   });
+
   var io = new IntersectionObserver(function(entries) {
     entries.forEach(function(e) {
       if (e.isIntersecting) {
-        var s = Array.from(e.target.parentNode.children).filter(function(c) { return c.style && c.style.opacity === '0'; });
+        var s = Array.from(e.target.parentNode.children).filter(function(c) {
+          return c.style && c.style.opacity === '0';
+        });
+
         var idx = s.indexOf(e.target);
+
         setTimeout(function() {
           e.target.style.opacity = '1';
           e.target.style.transform = 'translateY(0)';
         }, Math.max(0, idx) * 80);
+
         io.unobserve(e.target);
       }
     });
   }, { threshold: 0.08 });
-  els.forEach(function(el) { io.observe(el); });
+
+  els.forEach(function(el) {
+    io.observe(el);
+  });
 
 });
-
