@@ -285,7 +285,7 @@ section {
 /* ABOUT 섹션 (인라인 스타일 정리) */
 .about-sec {
   background: #fff;
-  padding: 96px 0;
+  padding: 96px 0 30px;
 }
 .about-label-row {
   display: flex;
@@ -483,7 +483,7 @@ section {
   IDEAL CANDIDATE
 ========================================================= */
 .ideal-sec {
-  padding: 96px 0;
+  padding: 96px 0 30px;
   background-color: #fff;
   overflow: hidden;
 }
